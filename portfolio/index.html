@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rudresha B M | Portfolio</title>
+    <meta name="description" content="Portfolio of Rudresha B M - MCA Student, Full Stack Developer, and AI Enthusiast.">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loader" class="loader">
+        <div class="loader-spinner"></div>
+    </div>
+
+    <!-- Background Canvas -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Background Icons -->
+    <div class="bg-icons">
+        <i class="fab fa-python icon-bg-1"></i>
+        <i class="fab fa-aws icon-bg-2"></i>
+        <i class="fas fa-database icon-bg-3"></i>
+        <i class="fab fa-js icon-bg-4"></i>
+        <i class="fas fa-brain icon-bg-5"></i>
+        <i class="fas fa-cloud icon-bg-6"></i>
+        <i class="fas fa-code icon-bg-7"></i>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Header / Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">RS<span>.</span></a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#qualifications" class="nav-link">Qualifications</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="slider-viewport">
+        <div class="main-slider" id="mainSlider">
+        <!-- Hero Section -->
+        <section id="home" class="hero section">
+            <div class="container hero-grid">
+                <div class="hero-content reveal">
+                    <h2 class="reveal">Hi, I'm <span class="highlight">Rudresha B M</span></h2>
+                    <h1 class="typing-container">
+                        <span id="typewriter"></span><span class="cursor">|</span>
+                    </h1>
+                    <p class="hero-text">Passionate about building modern web applications, AI-powered systems, and high-performance digital experiences with cutting-edge technology.</p>
+                    <div class="hero-cta reveal">
+                        <a href="#projects" class="btn btn-primary">View Projects <i class="fas fa-arrow-right" style="margin-left: 8px; font-size: 0.9rem;"></i></a>
+                        <a href="rudresha b m.pdf" download class="resume-btn">
+                            <span>Download Resume</span>
+                            <i class="fas fa-download"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual reveal">
+                    <div class="profile-wrapper">
+                        <img src="/Screenshot 2026-05-11 120208.png" alt="Rudresha B M" class="profile-img">
+                        <div class="profile-glow"></div>
+                        <div class="floating-tech">
+                            <i class="fab fa-python tech-icon" style="top: 10%; right: -10%; animation-delay: 0s;"></i>
+                            <i class="fab fa-js-square tech-icon" style="bottom: 20%; left: -10%; animation-delay: 1s;"></i>
+                            <i class="fas fa-brain tech-icon" style="top: 50%; right: -20%; animation-delay: 2s;"></i>
+                            <i class="fab fa-aws tech-icon" style="top: 30%; left: -15%; animation-delay: 0.5s;"></i>
+                            <i class="fas fa-database tech-icon" style="bottom: 5%; right: -5%; animation-delay: 1.5s;"></i>
+                            <i class="fab fa-java tech-icon" style="top: -15%; left: 10%; animation-delay: 0.7s;"></i>
+                            <i class="fab fa-docker tech-icon" style="top: -10%; right: 15%; animation-delay: 1.3s;"></i>
+                            <i class="fab fa-git-alt tech-icon" style="bottom: -10%; left: 30%; animation-delay: 2.5s;"></i>
+                            <i class="fab fa-react tech-icon" style="bottom: 50%; left: -25%; animation-delay: 1.8s;"></i>
+                            <i class="fab fa-html5 tech-icon" style="bottom: -15%; right: 20%; animation-delay: 0.3s;"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section reveal">
+            <div class="container">
+                <h2 class="section-title">About</h2>
+                <div class="about-wrapper glass-card">
+                    <div class="about-grid">
+                        <div class="about-visual">
+                            <div class="visual-orb"></div>
+                            <div class="stats-grid-container">
+                                <div class="stats-badge">
+                                    <i class="fas fa-code badge-icon"></i>
+                                    <span class="badge-num">2+</span>
+                                    <span class="badge-text">Years Coding</span>
+                                </div>
+                                <div class="stats-badge">
+                                    <i class="fas fa-award badge-icon"></i>
+                                    <span class="badge-num">10+</span>
+                                    <span class="badge-text">Certifications</span>
+                                </div>
+                                <div class="stats-badge">
+                                    <i class="fas fa-brain badge-icon"></i>
+                                    <span class="badge-num">5+</span>
+                                    <span class="badge-text">AI Solutions</span>
+                                </div>
+                                <div class="stats-badge">
+                                    <i class="fas fa-cloud badge-icon"></i>
+                                    <span class="badge-num">3+</span>
+                                    <span class="badge-text">Cloud Deployments</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-content">
+                            <p class="lead">I am an <span class="accent-text">MCA student</span> with a profound passion for software development, web technologies, and cutting-edge AI-based applications. My goal is to architect innovative solutions that bridge complex logic with intuitive user experiences.</p>
+                            <p>My hands-on experience includes building responsive and user-friendly web applications using a robust stack of <strong>HTML, CSS, JavaScript, Python, Flask, and MongoDB</strong>. Beyond full-stack development, I've delved into cloud technologies through intensive <strong>AWS Cloud training at Rooman Technology</strong>, gaining practical knowledge in deployment strategies and designing scalable systems.</p>
+                            
+                            <div class="about-details">
+                                <h4>Impactful Solutions:</h4>
+                                <div class="pill-container">
+                                    <span class="pill"><i class="fas fa-robot"></i> AI Disaster Rescue</span>
+                                    <span class="pill"><i class="fas fa-tractor"></i> Farmer Marketplace</span>
+                                    <span class="pill"><i class="fas fa-hand-holding-heart"></i> NGO Management</span>
+                                    <span class="pill"><i class="fas fa-clock"></i> Food Expiry Detection</span>
+                                </div>
+                            </div>
+
+                            <p class="mt-3">My strong problem-solving skills are backed by certifications in <strong>Python, Java, C++, DSA, CyberOps, Databases, and Tableau</strong>. I am continuously learning and refining my technical expertise to build innovative and impactful digital solutions that make a real difference.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section reveal">
+            <div class="container">
+                <h2 class="section-title">Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-card glass-card reveal">
+                        <div class="skill-header"><i class="fab fa-aws"></i> <span>AWS</span></div>
+                        <div class="progress-wrap"><div class="progress-bar" style="width: 80%;"></div></div>
+                    </div>
+                    <div class="skill-card glass-card reveal">
+                        <div class="skill-header"><i class="fas fa-database"></i> <span>NoSQL (MongoDB)</span></div>
+                        <div class="progress-wrap"><div class="progress-bar" style="width: 75%;"></div></div>
+                    </div>
+                    <div class="skill-card glass-card reveal">
+                        <div class="skill-header"><i class="fab fa-python"></i> <span>Python</span></div>
+                        <div class="progress-wrap"><div class="progress-bar" style="width: 90%;"></div></div>
+                    </div>
+                    <div class="skill-card glass-card reveal">
+                        <div class="skill-header"><i class="fas fa-globe"></i> <span>Web Application</span></div>
+                        <div class="progress-wrap"><div class="progress-bar" style="width: 85%;"></div></div>
+                    </div>
+                    <div class="skill-card glass-card reveal">
+                        <div class="skill-header"><i class="fas fa-chart-bar"></i> <span>Data Analytics</span></div>
+                        <div class="progress-wrap"><div class="progress-bar" style="width: 70%;"></div></div>
+                    </div>
+                    <div class="skill-card glass-card reveal">
+                        <div class="skill-header"><i class="fas fa-lightbulb"></i> <span>Problem Solving</span></div>
+                        <div class="progress-wrap"><div class="progress-bar" style="width: 95%;"></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section reveal">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card glass-card tilt reveal">
+                        <div class="project-icon-display">
+                            <i class="fas fa-robot icon-ai"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3><a href="https://github.com/rudreshshetty/AI-BASED-DISASTER-MANEGEMENT-SYSTEM-FOR-ARMY-" target="_blank" rel="noopener noreferrer"><i class="fas fa-robot"></i> AI Based Disaster Management System</a></h3>
+                            <p>An AI-powered system designed for coordinated rescue operations and efficient disaster management.</p>
+                            <div class="project-tags"><span>AI</span> <span>Python</span> <span>Flask</span></div>
+                            <div class="project-links">
+                                <a href="https://github.com/rudreshshetty/AI-BASED-DISASTER-MANEGEMENT-SYSTEM-FOR-ARMY-" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="#" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="project-card glass-card tilt reveal">
+                        <div class="project-icon-display">
+                            <i class="fas fa-tractor icon-farmer"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3><a href="https://github.com/rudreshshetty/FARMER-APP" target="_blank" rel="noopener noreferrer"><i class="fas fa-tractor"></i> Farmer App</a></h3>
+                            <p>A marketplace platform for farmers to sell produce directly to consumers, enhancing pricing transparency.</p>
+                            <div class="project-tags"><span>Web Technologies</span> <span>Databases</span></div>
+                            <div class="project-links">
+                                <a href="https://github.com/rudreshshetty/FARMER-APP" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="#" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 3 -->
+                    <div class="project-card glass-card tilt reveal">
+                        <div class="project-icon-display">
+                            <i class="fas fa-hourglass-half icon-food"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3><a href="https://github.com/rudreshshetty/Food-Expiry-Detection-Alert-System" target="_blank" rel="noopener noreferrer"><i class="fas fa-hourglass-half"></i> Food Expiry Detection Alert System</a></h3>
+                            <p>An intelligent application that tracks food items and alerts users before expiry to minimize waste.</p>
+                            <div class="project-tags"><span>Python</span> <span>AI/IoT</span></div>
+                            <div class="project-links">
+                                <a href="https://github.com/rudreshshetty/Food-Expiry-Detection-Alert-System" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="#" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 4 -->
+                    <div class="project-card glass-card tilt reveal">
+                        <div class="project-icon-display">
+                            <i class="fas fa-hand-holding-heart icon-ngo"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3><a href="https://github.com/rudreshshetty/NGO-DONATION-USING-BLOCKCHAIN" target="_blank" rel="noopener noreferrer"><i class="fas fa-hand-holding-heart"></i> NGO Donation using Blockchain</a></h3>
+                            <p>A secure donation platform using Blockchain to ensure transparency and trust in NGO fund management.</p>
+                            <div class="project-tags"><span>Blockchain</span> <span>Smart Contracts</span></div>
+                            <div class="project-links">
+                                <a href="https://github.com/rudreshshetty/NGO-DONATION-USING-BLOCKCHAIN" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="#" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Qualifications Section -->
+        <section id="qualifications" class="qualifications section reveal">
+            <div class="container">
+                <h2 class="section-title">Qualifications</h2>
+                <div class="qualifications-grid">
+                    <div class="glass-card qualifications-education reveal">
+                        <h3>Education</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <h4>Master of Computer Applications (MCA)</h4>
+                                <p>Sapthagiri NPS University</p>
+                                <span class="timeline-date">2025 – 2027</span>
+                            </div>
+                            <div class="timeline-item">
+                                <h4>Bachelor of Computer Applications (BCA)</h4>
+                                <p>Bangalore University, Government First Grade College – Vijayanagar</p>
+                                <span class="timeline-date">2022 – 2025 | CGPA: 8.4</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="glass-card qualifications-experience reveal">
+                        <h3>Experience</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <h4>Cloud Application Developer Intern</h4>
+                                <p>Rooman Technologies Pvt Ltd</p>
+                                <span class="timeline-date">Nov 2024 – Apr 2025</span>
+                                <ul>
+                                    <li>Gained hands-on experience in AWS cloud services, application deployment, and cloud-based solutions.</li>
+                                    <li>Applied problem-solving skills to real-world scenarios and improved understanding of cloud architecture.</li>
+                                </ul>
+                            </div>
+                            <div class="timeline-item">
+                                <h4>Full Stack Developer (Academic Projects)</h4>
+                                <p>Self-Directed & Academic</p>
+                                <span class="timeline-date">2023 – Present</span>
+                                <ul>
+                                    <li>Architected and developed responsive web applications using HTML, CSS, JavaScript, Python, Flask, and MongoDB.</li>
+                                    <li>Specialized in creating AI-powered systems and blockchain integrations for social impact.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="glass-card qualifications-certifications reveal">
+                        <h3>Certifications</h3>
+                        <div class="pill-container" style="margin-top: 1.5rem;">
+                            <span class="pill">Python</span>
+                            <span class="pill">Java</span>
+                            <span class="pill">C++</span>
+                            <span class="pill">DSA</span>
+                            <span class="pill">CyberOps</span>
+                            <span class="pill">Databases</span>
+                            <span class="pill">Tableau</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="contact section reveal">
+            <div class="container">
+                <h2 class="section-title">Contact</h2>
+                <div class="glass-card text-center">
+                    <div class="social-links">
+                        <a href="https://github.com/rudreshshetty" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/rudreshabm/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/_rudreshshetty_?igsh=ZWl3MzF0cW0xb25x" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        </div> <!-- End main-slider -->
+    </main>
+
+    <button id="backToTop" class="back-to-top"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="script.js"></script>
+</body>
+</html>
